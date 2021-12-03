@@ -42,14 +42,14 @@ class HousieGame:
                          ticket.surrender()
                          self.first_row_winners.append(ticket)
             
-             # check second row full tickets
+            # check second row full tickets
             if len(self.second_row_winners) == 0:
                 for ticket in self.tickets:
                     if 1 in ticket.get_full_row_ids():
                          ticket.surrender()
                          self.second_row_winners.append(ticket)
 
-             # check third row full tickets
+            # check third row full tickets
             if len(self.third_row_winners) == 0:
                 for ticket in self.tickets:
                     if 2 in ticket.get_full_row_ids():
